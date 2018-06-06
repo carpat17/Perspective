@@ -1,12 +1,61 @@
 <html>
 <head>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Anaheim|Dosis" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/main.css" >
 </head>
 
 <body>
 
-<h1>Hello World!</h1>
+
+  <section id="main">
+  <header>
+      <i id="logo" class="fas fa-camera-retro"></i>
+      <h1>Welcome to Perspective!</h1>
+      <p> This application enables a unique viewing experience for your favorite events! We combine multiple live views of an event and allow you to dynamically switch between offered views to give you the best perspective.</p>
+  </header>
+
+
+  </section>
+
+
+<section id="videos">
+
+<a href="#" class="active">Some Really Cool Event</a>
+
+<div id="video-placeholder"></div>
+
+<div id="ytplayer"></div>
+
+<script>
+  // Load the IFrame Player API code asynchronously.
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/player_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  // Replace the 'ytplayer' element with an <iframe> and
+  // YouTube player after the API code downloads.
+  var player;
+  function onYouTubePlayerAPIReady() {
+    player = new YT.Player('ytplayer', {
+      height: '360',
+      width: '640',
+      videoId: 'https://www.youtube.com/embed/fw3UYy02lSI'
+    });
+  }
+</script>
+
+</section>
+
+
+<!-- Scripts -->
+<script src="https://www.youtube.com/iframe_api"></script>
+<script src="assets/js/player.js"></script>
 
 </body>
+
 
 
 </html>

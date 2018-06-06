@@ -1,0 +1,68 @@
+body {
+
+
+}
+
+
+h1, h2, h3, h4 {
+  font-family: 'Anaheim', sans-serif;
+
+}
+
+a{
+  color: #B90504;
+
+}
+
+a.active {
+
+color: #E8E8E8;
+
+}
+
+a:hover{
+
+  color: red;
+}
+
+#header {
+  margin-left: 2em;
+  width: 80%;
+}
+
+#main header h1{
+  color: #990100;
+  font-size: 2em;
+  margin-bottom: -.5em;
+
+}
+
+#main header{
+  border-bottom: 1px solid #990100;
+}
+
+#logo {
+  position: absolute;
+  color: #B90504;
+  font-size: 7em;
+  margin-left: -1.2em;
+
+}
+
+
+#main {
+
+  min-width: 800px;
+  max-width: 1000px;
+  font-family: 'Dosis', sans-serif;
+  margin: auto;
+  color: #333333;
+
+}
+
+#videos {
+  min-width: 800px;
+  max-width: 1000px;
+  margin: auto;
+
+}
