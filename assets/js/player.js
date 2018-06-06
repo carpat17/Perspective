@@ -51,3 +51,55 @@ $('#mute-toggle3').on('click', function() {
         mute_toggle.text('P4 un-mute');
     }
 });
+
+$('#mute-toggle4').on('click', function() {
+    var mute_toggle = $(this); // The button
+
+    if(player4.isMuted()){
+        player4.unMute();
+        mute_toggle.text('P5 mute');
+    }
+    else{
+        player4.mute();
+        mute_toggle.text('P5 un-mute');
+    }
+});
+
+$('#mute-toggle5').on('click', function() {
+    var mute_toggle = $(this); // The button
+
+    if(player5.isMuted()){
+        player5.unMute();
+        mute_toggle.text('P6 mute');
+    }
+    else{
+        player5.mute();
+        mute_toggle.text('P6 un-mute');
+    }
+});
+
+$('#mute-toggle6').on('click', function() {
+    var mute_toggle = $(this); // The button
+
+    if(player6.isMuted()){
+        player6.unMute();
+        mute_toggle.text('P7 mute');
+    }
+    else{
+        player6.mute();
+        mute_toggle.text('P7 un-mute');
+    }
+});
+
+$('#mute-toggle7').on('click', function() {
+    var mute_toggle = $(this); // The button
+
+    if(player7.isMuted()){
+        player7.unMute();
+        mute_toggle.text('P8 mute');
+    }
+    else{
+        player7.mute();
+        mute_toggle.text('P8 un-mute');
+    }
+});
